@@ -14,6 +14,9 @@ const ENLACE_2 = "https://discord.com";
 const ENLACE_3 = "https://es.stackoverflow.com";
 
 let opcionRecibida = prompt("Ingrese una opcion estetica: 1, 2 o 3");
+let nombreUsuarioIngresar = prompt("Ingrese su nombre de usuario");
+
+nombreUsuario.innerHTML = nombreUsuarioIngresar
 
 function modificarPagina(colorFondo, colorTexto, colorUsuario, tamanioTexto, tipoFuente, enlaceImg, anchoImg, enlacePagina) {
     cuerpoPagina.style.backgroundColor = colorFondo;
@@ -24,14 +27,14 @@ function modificarPagina(colorFondo, colorTexto, colorUsuario, tamanioTexto, tip
     imagen.src = enlaceImg;
     imagen.style.width = anchoImg;
     enlace.href = enlacePagina;
-    
+
 }
 
 
 if (opcionRecibida == 1) {
-    modificarPagina("orange", "black", "red", "15px", "monospace" , IMG_1 , "200px" , ENLACE_1);
+    modificarPagina("orange", "black", "red", "15px", "monospace", IMG_1, "200px", ENLACE_1);
 } else if (opcionRecibida == 2) {
-    modificarPagina("black", "white", "purple", "20px", "cursive",IMG_2, "300px" , ENLACE_2);
+    modificarPagina("black", "white", "purple", "20px", "cursive", IMG_2, "300px", ENLACE_2);
 } else if (opcionRecibida == 3) {
-    modificarPagina("pink", "green", "white", "30px", "fantasy", IMG_3,"450px" , ENLACE_3);
+    modificarPagina("pink", "green", "white", "30px", "fantasy", IMG_3, "450px", ENLACE_3);
 }
